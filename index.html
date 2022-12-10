@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!--Dentro da tag "Head", inserimos as informações que o navegador vai ler, como títulos, descrições, palavras-chaves e outras.-->
+
+<head>
+
+  <!-- O atributo charset informa ao navegador o tipo de codificação que deve ser usada. O modelo de codificação UTF-8 pode representar qualquer caráter universal padrão Unicode. Caso não colocar dá problemas de renderização-->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Descrição da página, palavras-chaves, autor do documento.-->
+
+  <meta name="description" content="Descrição da página">
+  <meta name="keywords" content="Palavras-chaves">
+  <meta name="author" content="nome do Autor">
+
+
+  <title>Prática Ensinamentos</title>
+
+</head>
+
+<!--Não é mais recomendado usar bgcolor aqui, e sim no CSS-->
+
+<body bgcolor="white">
+
+  <!--Acima é possível visualizar o atributo bgcolor (que não é "existe" mais), para decidir a cor do corpo do texto. -->
+
+  <!--Os atributos são informações que inserimos nas tags para que elas tenham um comportamento desejado. Existem atributos que utilizamos em quase todas as tags. Já outros atributos podem ser exclusivos para um tipo de tag.-->
+
+  <nomedatag atributo1="valor do atributo 1" atributo2="valor do atributo 2"> </nomedatag>
+
+  <!--Atributo id, class, alt, name e content-->
+
+  <p>
+    <font color="red" size="5px" face="verdana">Separadores</font>
+  </p>
+  <p>
+    Caso queira quebrar a linha digite &lt;br&gt; <br>
+    Caso queira parágrafo digite &lt;p&gt; <br>
+    Caso queira uma linha horizontal digite &lt;hr&gt;
+    <br>
+    Vale ressaltar que tags como &lt;br&gt; &lt;hr&gt; são tags nulas, ou seja não se fecham.
+  </p>
+  <hr>
+  <p>
+    <font color="red" size="5px" face="verdana">Formatação de cabeçalho</font>
+    <br>
+    Digitamos h e o nível, sendo possível de 1 até 6. Tags não nulas.
+  </p>
+  <h1>Título de primeiro nível</h1>
+  <h2>Título de segundo nível</h2>
+  <h3>Título de terceiro nível</h3>
+  <h4>Título de quarto nível</h4>
+  <h5>Título de quinto nível</h5>
+  <h6>Título de sexto nível</h6>
+  <hr>
+  <p>
+    <font color="red" size="5px" face="verdana">Formatação dos textos</font>
+  </p>
+  <p>
+    Caso queira deixar em negrito (bold) digite &lt;b&gt;
+    <br>
+    Por exemplo: <b>Lá ele</b> 
+    <br>
+    Caso queira deixar em negrito e representar algo importante, sério e urgente, digite &lt;strong&gt;
+    <br>
+    Por exemplo: <strong>Olha</strong> ele 
+    <br>
+    Caso queira em Itálico digite &lt;i&gt; , usada em termos técnicos. <br> Por exemplo: O nome da flor é
+    <i>Orquídea</i>. <br>
+    Caso queira em Itálico com enfâse em uma palavra digite &lt;em&gt; deve ser usada para dar ênfase a uma palavra.
+    <br>
+    Por exemplo: Ela <em>não</em> passou por aqui ontem. E na acessebilidade o texto é lido com mais intensidade.
+    <br>
+    Caso queira em sublinhado digite
+    &lt;u&gt; <br>
+    Por exemplo: <u>Norman</u> <br>
+    Caso queira o texto subscrito (letras pequenas abaixo de um texto) digite &lt;sub&gt;
+    <br>
+    Por exemplo: H<sub>2</sub>0. <br>
+    Caso queira o texto em sobrescrito (letras pequenas acima de um texto) digite &lt;sup&gt;.
+    <br>
+    Por exemplo: X <sup>4</sup>. 
+    <br>
+    <br>
+    Ps: Não são tags nulas.
+  </p>
+  <hr>
+  <p>
+    <font color="red" size="5px" face="verdana">Formas de inserir cores </font>
+  </p>
+  <p>
+    As cores podem ser inseridas de duas formas: <br>
+    Por seus nomes em inglês. <br>
+    Por seus códigos hexadecimais. <br>
+    Foreground é o primeiro plano da página(background=último plano).
+    <br> A fonte(qualquer caractere de texto seja letra, número ou símbolo) é um elemento que faz parte do foreground de
+    uma página.
+  </p>
+  <p>
+    Veja outras cores no site: <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3C
+      Schools</a> <br>
+    Ver tabela de cores em HTML nele.
+  </p>
+  <hr>
+  <p>
+    <font color="red" size="5px" face="verdana"> Tamanho e estilo do Texto </font> <br> O título do texto utiliza três
+    atributos com a tag Font(não mais recomendada). Sendo color, para cor, size para tamanho e face para a fonte do
+    texto. <br>
+    &lt;font color=""&gt;Para cor de fonte <br>
+    &ltfont size= “”&gt;Para tamanho da fonte <br>
+    &lt;font face = “”&gt;Para o estilo da fonte 
+  </p>
+  <hr>
+  <p>
+    <font color="red" size="5px" face="verdana">Listas</font>
+  </p>
+  <p>
+    Para criar uma lista não ordenada digite &lt;ul&gt;. (li é usado para definir a lista)
+    <br>
+    Por exemplo: Jogos <ul>
+      <li> Salão</li>
+      <li> Online </li>
+      <li> Terra </li>
+    </ul>
+  </p>
+  <p>
+    Para criar uma lista ordenada digite &lt;ol&gt;.
+    <br>
+    Por exemplo: Jogos <ol>
+      <li> Salão</li>
+      <li> Online </li>
+      <li> Terra </li>
+    </ol>
+  </p>
+  <p>
+    Para criar uma lista de definição digite &lt;d&gt; e o número da lista. <br>
+    <!-- A lista de definição é constituída por um termo e uma descrição. A criação desse modelo de lista utiliza três elementos do HTML.-->
+
+    Por exemplo: <dl>
+      <dt> criar níveis</dt>
+      <dd> adiciona a definição-subníveis.</dd>
+    </dl>
+    <d2>
+      <dt> criar níveis</dt>
+      <dd> adiciona a definição-subníveis.</dd>
+    </d2>
+  </p>
+  <hr>
+  <p>
+    <font color="red" size="5px" face="verdana">Inserção de Links</font>
+  </p>
+  <p>
+    Para inserir um link na página digite &lt;a&gt; com o atributo href="Endereço de destino". <br>
+    Caso queira que abrir em outra página coloque target="_blank" <br>
+    Por exemplo: <a href="https://github.com/willianenf" target="_blank">Meu Github</a>
+    <!--
+      target="_blank" carrega o novo endereço de destino em uma nova janela ou uma nova aba.
+      o atributo href="" é obrigatório. Tal atributo guarda o novo endereço para onde o usuário será direcionado.
+    -->
+  </p>
+  <hr>
+  <p>
+    <font color="red" size="5px" face="verdana">Inserção de Imagens</font>
+  </p>
+  <p>
+    Para inserir uma imagem na página digite &lt;img&gt; com o atributo src="Local onde está a imagem". <br>
+    Caso queira breve descrição para imagem digite alt="" <br>
+    Por exemplo: <img src="img/mapa01.png" alt="Tela de cógidos em um notebook" width="">
+    <!--
+    Antes podia definir a largura da imagem digitando
+    width="", mas não é mais de boa prática. CSS cuida disso
+     Os atributos dessa tag auxiliam na definição do tamanho, da posição e da descrição da imagem. 
+    -->
+  </p>
+  <hr>
+  <p>
+    <font color="red" size="5px" face="verdana">Tabelas</font>
+  </p>
+  <p>
+    <table border="1">
+
+      <tr>
+        <th>Título 1</th>
+        <th>Título 2</th>
+      </tr>
+
+      <tr>
+        <td> Kpop </td>
+        <td> Pop </td>
+      </tr>
+
+      <tr>
+        <td> HipHop </td>
+        <td> Rap </td>
+      </tr>
+
+    </table>
+  </p>
+  <hr>
+  <p>
+    <font color="red" size="5px" face="verdana">Formulários</font>
+  </p>
+
+  <form action=”/deixaremos-em-branco” method=”post”>
+    <label> Text: </label>
+    <input type=”text”>
+    <label> Password: </label>
+    <input type=”password”>
+    <label> Textarea: </label>
+    <textarea> </textarea>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+  </p>
+</body>
+
+</html>
