@@ -33,8 +33,22 @@
   <nomedatag atributo1="valor do atributo 1" atributo2="valor do atributo 2"> </nomedatag>
 
   <!--Atributo id, class, alt, name e content-->
-
+  <font color="black" size="5px" face="verdana">Links para cada coisa</font> <hr>
+  <ul><a href="#Separadores">Separadores</a><br>
+  <a href="#Formatacaodecabecalho">Formatação de cabeçalho</a><br>
+  <a href="#Formatacaodostextos">Formatação dos textos</a> <br>
+  <a href="#Formasdeinserircores">Formas de inserir cores</a> <br>
+  <a href="#Tamanhoeestilodotexto">Tamanho e estilo do texto</a> <br>
+  <a href="#Listas">Listas</a> <br>
+  <a href="#InsercaodeLinks">Inserção de Links</a> <br>
+  <a href="#InsercaodeImagens">Inserção de Imagens</a> <br>
+  <a href="#Tabelas">Tabelas</a> <br>
+  <a href="#FazerFormulario">Fazer Formulário</a> <br>
+  <a href="#UsodosTypes">Uso dos Types</a>
+</ul>
+<hr>
   <p>
+    <a name="Separadores">
     <font color="red" size="5px" face="verdana">Separadores</font>
   </p>
   <p>
@@ -43,12 +57,16 @@
     Caso queira uma linha horizontal digite &lt;hr&gt;
     <br>
     Vale ressaltar que tags como &lt;br&gt; &lt;hr&gt; são tags nulas, ou seja não se fecham.
+    </a>
   </p>
   <hr>
   <p>
+    <a name="Formatacaodecabecalho">
     <font color="red" size="5px" face="verdana">Formatação de cabeçalho</font>
     <br>
+    <br>
     Digitamos h e o nível, sendo possível de 1 até 6. Tags não nulas.
+  </a>
   </p>
   <h1>Título de primeiro nível</h1>
   <h2>Título de segundo nível</h2>
@@ -56,8 +74,10 @@
   <h4>Título de quarto nível</h4>
   <h5>Título de quinto nível</h5>
   <h6>Título de sexto nível</h6>
+
   <hr>
   <p>
+    <a name="Formatacaodostextos">
     <font color="red" size="5px" face="verdana">Formatação dos textos</font>
   </p>
   <p>
@@ -87,9 +107,11 @@
     <br>
     <br>
     Ps: Não são tags nulas.
+  </a>
   </p>
   <hr>
   <p>
+    <a name="Formasdeinserircores">
     <font color="red" size="5px" face="verdana">Formas de inserir cores </font>
   </p>
   <p>
@@ -104,18 +126,22 @@
     Veja outras cores no site: <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3C
       Schools</a> <br>
     Ver tabela de cores em HTML nele.
+  </a>
   </p>
   <hr>
   <p>
+    <a name="Tamanhoeestilodotexto">
     <font color="red" size="5px" face="verdana"> Tamanho e estilo do Texto </font> <br> O título do texto utiliza três
     atributos com a tag Font(não mais recomendada). Sendo color, para cor, size para tamanho e face para a fonte do
     texto. <br>
     &lt;font color=""&gt;Para cor de fonte <br>
     &ltfont size= “”&gt;Para tamanho da fonte <br>
     &lt;font face = “”&gt;Para o estilo da fonte 
+  </a>
   </p>
   <hr>
   <p>
+    <a name="Listas">
     <font color="red" size="5px" face="verdana">Listas</font>
   </p>
   <p>
@@ -148,9 +174,11 @@
       <dt> criar níveis</dt>
       <dd> adiciona a definição-subníveis.</dd>
     </d2>
+  </a>
   </p>
   <hr>
   <p>
+    <a name="InsercaodeLinks">
     <font color="red" size="5px" face="verdana">Inserção de Links</font>
   </p>
   <p>
@@ -161,9 +189,11 @@
       target="_blank" carrega o novo endereço de destino em uma nova janela ou uma nova aba.
       o atributo href="" é obrigatório. Tal atributo guarda o novo endereço para onde o usuário será direcionado.
     -->
+  </a>
   </p>
   <hr>
   <p>
+    <a name="InsercaodeImagens">
     <font color="red" size="5px" face="verdana">Inserção de Imagens</font>
   </p>
   <p>
@@ -175,9 +205,11 @@
     width="", mas não é mais de boa prática. CSS cuida disso
      Os atributos dessa tag auxiliam na definição do tamanho, da posição e da descrição da imagem. 
     -->
+  </a>
   </p>
   <hr>
   <p>
+    <a name="Tabelas">
     <font color="red" size="5px" face="verdana">Tabelas</font>
   </p>
   <p>
@@ -199,23 +231,95 @@
       </tr>
 
     </table>
+  </a>
   </p>
   <hr>
   <p>
-    <font color="red" size="5px" face="verdana">Formulários</font>
+    <a name="FazerFormulario">
+    <font color="red" size="5px" face="verdana">Fazer Formulário</font>
   </p>
+<p>Para fazer um formulário digite &lt;form&gt; <br>
+A melhor prática sempre definir pelo menos o atributo action e o atributo method. <br>
+O atributo action define o local (uma URL) em que os dados recolhidos do formulário devem ser enviados. <br>
+O atributo method define qual o método HTTP para enviar os dados (ele pode ser "GET" ou "POST"). <br>
+GET: Quando clicamos em um link da tag &lt;a&gt;, o link utiliza o método GET. O método GET possui capacidade para 1.024 caracteres e é utilizado para passar pequenas informações ao servidor. Ele vem pôr padrão.
+<br>
+POST: O método POST não retorna ao cliente. Desse modo, é considerado um método mais seguro. Além disso, o método POST não possui limite de capacidade, o que permite passar informações mais longas
+<br>
+O atributo type da tag &lt;input&gt; é o mais importante. Tal atributo define como o elemento deve comportar-se.
+<br>
+Também inserimos uma tag &lt;textarea&gt; para verificar a diferença dela com a tag &lt;input&gt; do tipo text.
+  <br>
+  Por fim, inserimos uma tag &lt;label&gt;para cada elemento, a fim de facilitar a identificação de cada um.
+</p>
 
-  <form action=”/deixaremos-em-branco” method=”post”>
-    <label> Text: </label>
-    <input type=”text”>
-    <label> Password: </label>
-    <input type=”password”>
+  Por exemplo: <br>
+   <form action=”cadatro.php” method=”post” autocomplete="off">
+    <label for="inome"> text: </label>
+    <input type=”text” name="nome" id="inome">
+    <label for="isenha"> password: </label>
+    <input type=”password” name="senha" id="isenha">
     <label> Textarea: </label>
     <textarea> </textarea>
+ <input type="submit" value="Cadastro">
+</a>
+   <!-- <button type="submit">Cadastrar</button>-->
+   
+<!--Se quiser pode colocar autocomplete="off" dentro da tag form para tirar aquela mensagem "chata"
 
-    <button type="submit">Cadastrar</button>
+Label é etiqueta- relaciona a palavra com o objeto(ajuda no celular)
+
+Name="" para php e html
+id="" é para js, inclusive para o label
+
+crtl+shift+p em cima de nome, envelopar, label
+
+Mesmo que não link para uma página, olha a URL.
+
+q= é caixa da solitação
+
+Colocado POST inspeciona, vai em network, headers, sobe e clica no cadastro php, depois desce que tu acha as informações.Para proteger, aí entraria o https
+
+Usar get, quando os dados não forem sensíveis(senha, número de cartão de crédito, endereço..)
+
+get tem limite de 3000 bytes(3000 letras), e não aceita envio de arquivos(fotos)
+
+Usamos o post para dados sensíveis
+
+No futuro tenho que aprender mais de https para proteger dados
+
+Não é mais critério a velocidade entre Get e Post-->
   </form>
   </p>
+  <hr>
+<p>
+  <a name="UsodosTypes">
+  <font color="red" size="5px" face="verdana">Uso dos types no Button</font>
+</p>
+<p>
+Para criar um botão usamos a tag &lt;button&gt; e ele tem três valores para Type, sendo: <br>
+Submit: O type submit envia os dados do formulário à página-destino do atributo actions. <br>
+Por exemplo: <button type="submit">Cadastro</button> 
+<br>
+Reset: O type reset redefine todos os campos para padrão, assim que acionado. <br>
+Por exemplo: <button type="submit">Envio</button> 
+<br>
+Button: Uma tag button com o type button não realiza nenhuma ação, a não ser que seja acionada via codificação Javascript. Esse não tenho exemplo pôrque ainda não mexi bem no Javascript.<br>
+</a>
+</p>
+<hr>
+<p>
+  <font color="red" size="5px" face="verdana">Checkbox</font>
+</p>
+<p>
+  Checkbox é uma tag codificada para uma seleção múltipla e independente de opções(caso uma selecionada, não cancela a outra opção.) <br>
+  Name e value são responsáveis por informar actions aos dados que devem ser enviados ao servidor.  <br>
+  Para adicionar checkbox basta colocar &lt;input type="checkbox" name="nome" value="SelectA"&gt; <br>
+  &lt;input type="checkbox" name="nome" value="SelectB"&gt; <br>
+  Caso coloque checked, o elemento já aparecer selecionado. <br>
+  Por exemplo: <input type="checkbox" name="nome" value="SelectA"> Botão A </input> 
+  <input type="checkbox" name="nome" value="SelectB"&gt;>Botão B </input> <br>
+</p>
 </body>
 
 </html>
