@@ -17,7 +17,8 @@
   <meta name="keywords" content="Palavras-chaves">
   <meta name="author" content="nome do Autor">
 
-
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="shortcut icon" href="img/notebook.ico" type="image/x-icon">
   <title>Prática Ensinamentos</title>
 
 </head>
@@ -33,246 +34,365 @@
   <nomedatag atributo1="valor do atributo 1" atributo2="valor do atributo 2"> </nomedatag>
 
   <!--Atributo id, class, alt, name e content-->
-  <font color="black" size="5px" face="verdana">Links para cada coisa</font> <hr>
-  <ul><a href="#Separadores">Separadores</a><br>
-  <a href="#Formatacaodecabecalho">Formatação de cabeçalho</a><br>
-  <a href="#Formatacaodostextos">Formatação dos textos</a> <br>
-  <a href="#Formasdeinserircores">Formas de inserir cores</a> <br>
-  <a href="#Tamanhoeestilodotexto">Tamanho e estilo do texto</a> <br>
-  <a href="#Listas">Listas</a> <br>
-  <a href="#InsercaodeLinks">Inserção de Links</a> <br>
-  <a href="#InsercaodeImagens">Inserção de Imagens</a> <br>
-  <a href="#Tabelas">Tabelas</a> <br>
-  <a href="#FazerFormulario">Fazer Formulário</a> <br>
-  <a href="#UsodosTypes">Uso dos Types</a>
-</ul>
-<hr>
-  <p>
-    <a name="Separadores">
-    <font color="red" size="5px" face="verdana">Separadores</font>
-  </p>
-  <p>
-    Caso queira quebrar a linha digite &lt;br&gt; <br>
-    Caso queira parágrafo digite &lt;p&gt; <br>
-    Caso queira uma linha horizontal digite &lt;hr&gt;
-    <br>
-    Vale ressaltar que tags como &lt;br&gt; &lt;hr&gt; são tags nulas, ou seja não se fecham.
+  <a name="Linksparacadacoisa">
+    <h1>Links para cada coisa</h1>
+  </a>
+  <hr>
+  <ul>
+    <a href="#Separadores">Separadores</a><br>
+    <a href="#Simbolos">Símbolos</a><br>
+    <a href="#Emojis">Emojis</a> <br>
+    <a href="#InsercaodeImagens">Inserção de Imagens</a> <br>
+    <a href="#Formatacaodecabecalho">Formatação de cabeçalho</a><br>
+    <a href="#SiteemHtml4">Site em HTML4</a> <br>
+    <a href="#Formatacaodostextos">Formatação dos textos</a> <br>
+    <a href="#Formasdeinserircores">Formas de inserir cores</a> <br>
+    <a href="#Listas">Listas</a> <br>
+    <a href="#InsercaodeLinks">Inserção de Links</a> <br>
+
+    <a href="#Tabelas">Tabelas</a> <br>
+    <a href="#FazerFormulario">Fazer Formulário</a> <br>
+    <a href="#UsodosTypes">Uso dos Types</a> <br>
+    <a href="#Checkbox">Checkbox</a> <br>
+    <a href="#Atalhos">Atalhos</a>
+  </ul>
+  <hr>
+  <a name="Separadores">
+    <a href="#Linksparacadacoisa">
+      <h1>Separadores</h1>
     </a>
-  </p>
-  <hr>
-  <p>
-    <a name="Formatacaodecabecalho">
-    <font color="red" size="5px" face="verdana">Formatação de cabeçalho</font>
-    <br>
-    <br>
-    Digitamos h e o nível, sendo possível de 1 até 6. Tags não nulas.
+    <p>
+      Parágrafo digite a tag &lt;p&gt; e &lt;/p&gt; <br>
+      Quebrar a linha/texto digite a tag &lt;br&gt; <br>
+      Linha horizontal digite &lt;hr&gt; <br>
+      Vale ressaltar que tags como br e hr são tags nulas, ou seja não se fecham.
   </a>
   </p>
-  <h1>Título de primeiro nível</h1>
-  <h2>Título de segundo nível</h2>
-  <h3>Título de terceiro nível</h3>
-  <h4>Título de quarto nível</h4>
-  <h5>Título de quinto nível</h5>
-  <h6>Título de sexto nível</h6>
+  <hr>
+  <a name="Simbolos">
+    <a href="#Linksparacadacoisa">
+      <h1>Símbolos</h1>
+    </a>
+    <p>
+      Vamos adicionar alguns símbolos especiais:
+      &nbsp;
+      &reg;
+      &copy;
+      &trade;
+      &euro;
+      &pound;
+      &yen;
+      &empty;
+      &sum;
+      &cent;
+      &Delta;
+      &delta;
+      &larr;
+      &uarr;
+      <!--ou &uparrow-->
+      &rarr;
+      &darr;
+    </p>
 
-  <hr>
-  <p>
-    <a name="Formatacaodostextos">
-    <font color="red" size="5px" face="verdana">Formatação dos textos</font>
-  </p>
-  <p>
-    Caso queira deixar em negrito (bold) digite &lt;b&gt;
-    <br>
-    Por exemplo: <b>Lá ele</b> 
-    <br>
-    Caso queira deixar em negrito e representar algo importante, sério e urgente, digite &lt;strong&gt;
-    <br>
-    Por exemplo: <strong>Olha</strong> ele 
-    <br>
-    Caso queira em Itálico digite &lt;i&gt; , usada em termos técnicos. <br> Por exemplo: O nome da flor é
-    <i>Orquídea</i>. <br>
-    Caso queira em Itálico com enfâse em uma palavra digite &lt;em&gt; deve ser usada para dar ênfase a uma palavra.
-    <br>
-    Por exemplo: Ela <em>não</em> passou por aqui ontem. E na acessebilidade o texto é lido com mais intensidade.
-    <br>
-    Caso queira em sublinhado digite
-    &lt;u&gt; <br>
-    Por exemplo: <u>Norman</u> <br>
-    Caso queira o texto subscrito (letras pequenas abaixo de um texto) digite &lt;sub&gt;
-    <br>
-    Por exemplo: H<sub>2</sub>0. <br>
-    Caso queira o texto em sobrescrito (letras pequenas acima de um texto) digite &lt;sup&gt;.
-    <br>
-    Por exemplo: X <sup>4</sup>. 
-    <br>
-    <br>
-    Ps: Não são tags nulas.
-  </a>
-  </p>
-  <hr>
-  <p>
-    <a name="Formasdeinserircores">
-    <font color="red" size="5px" face="verdana">Formas de inserir cores </font>
-  </p>
-  <p>
-    As cores podem ser inseridas de duas formas: <br>
-    Por seus nomes em inglês. <br>
-    Por seus códigos hexadecimais. <br>
-    Foreground é o primeiro plano da página(background=último plano).
-    <br> A fonte(qualquer caractere de texto seja letra, número ou símbolo) é um elemento que faz parte do foreground de
-    uma página.
-  </p>
-  <p>
-    Veja outras cores no site: <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3C
-      Schools</a> <br>
-    Ver tabela de cores em HTML nele.
-  </a>
-  </p>
-  <hr>
-  <p>
-    <a name="Tamanhoeestilodotexto">
-    <font color="red" size="5px" face="verdana"> Tamanho e estilo do Texto </font> <br> O título do texto utiliza três
-    atributos com a tag Font(não mais recomendada). Sendo color, para cor, size para tamanho e face para a fonte do
-    texto. <br>
-    &lt;font color=""&gt;Para cor de fonte <br>
-    &ltfont size= “”&gt;Para tamanho da fonte <br>
-    &lt;font face = “”&gt;Para o estilo da fonte 
-  </a>
-  </p>
-  <hr>
-  <p>
-    <a name="Listas">
-    <font color="red" size="5px" face="verdana">Listas</font>
-  </p>
-  <p>
-    Para criar uma lista não ordenada digite &lt;ul&gt;. (li é usado para definir a lista)
-    <br>
-    Por exemplo: Jogos <ul>
-      <li> Salão</li>
-      <li> Online </li>
-      <li> Terra </li>
-    </ul>
-  </p>
-  <p>
-    Para criar uma lista ordenada digite &lt;ol&gt;.
-    <br>
-    Por exemplo: Jogos <ol>
-      <li> Salão</li>
-      <li> Online </li>
-      <li> Terra </li>
-    </ol>
-  </p>
-  <p>
-    Para criar uma lista de definição digite &lt;d&gt; e o número da lista. <br>
-    <!-- A lista de definição é constituída por um termo e uma descrição. A criação desse modelo de lista utiliza três elementos do HTML.-->
+    <hr>
 
-    Por exemplo: <dl>
-      <dt> criar níveis</dt>
-      <dd> adiciona a definição-subníveis.</dd>
-    </dl>
-    <d2>
-      <dt> criar níveis</dt>
-      <dd> adiciona a definição-subníveis.</dd>
-    </d2>
-  </a>
-  </p>
-  <hr>
-  <p>
-    <a name="InsercaodeLinks">
-    <font color="red" size="5px" face="verdana">Inserção de Links</font>
-  </p>
-  <p>
-    Para inserir um link na página digite &lt;a&gt; com o atributo href="Endereço de destino". <br>
-    Caso queira que abrir em outra página coloque target="_blank" <br>
-    Por exemplo: <a href="https://github.com/willianenf" target="_blank">Meu Github</a>
-    <!--
+    <a name="Emojis">
+      <a href="#Linksparacadacoisa">
+        <h1>Emojis</h1>
+      </a>
+      <p>Vamos adicionar alguns emojis:
+        &#x1F596;
+        &#X1F913;
+      </p>
+
+      <hr>
+
+      <a name="InsercaodeImagens">
+        <a href="#Linksparacadacoisa">
+          <h1>Inserção de Imagens</h1>
+        </a>
+        <p>
+          Inserir uma imagem na página use a tag &lt;img&gt; com o atributo src="local onde está a imagem". Tag Nula.
+          <br>
+          Caso queira breve descrição para imagem digite alt=""
+          <br>
+          <!--
+    Antes podia definir a largura da imagem digitando
+    width="", mas não é mais de boa prática. CSS cuida disso.
+    ?? Os atributos dessa tag auxiliam na definição do tamanho, da posição e da descrição da imagem. 
+    -->
+          Exemplos sobre imagens, clique no botão embaixo.
+          <br>
+          <br>
+          <a href="img/imagens.html"><button>Imagens</button></a>
+        </p>
+
+        <hr>
+
+        <a name="Favicon">
+          <a href="#Linksparacadacoisa">
+            <h1>Favicon</h1>
+          </a>
+          <p>
+            Para adicionar Favicon basta digitar &lt;link rel="shortcut icon" href="endereço do arquivo"
+            type="image/x-icon"&gt; <br>
+            Neste site já está adicionado, de exemplo temos ele próprio.
+          </p>
+
+
+          <hr>
+          <a name="Formatacaodecabecalho">
+            <a href="#Linksparacadacoisa">
+              <h1>Formatação de cabeçalho</h1>
+            </a>
+            Conhecido também como Hierarquia de Títulos. Digitamos a tag h e o nível, sendo possível de 1 até 6. <br>
+            Tags não nulas. <br>
+            Por exemplo:
+          </a>
+
+          <h1>Título de primeiro nível</h1>
+          <h2>Título de segundo nível</h2>
+          <h3>Título de terceiro nível</h3>
+          <h4>Título de quarto nível</h4>
+          <h5>Título de quinto nível</h5>
+          <h6>Título de sexto nível</h6>
+
+          <hr>
+
+          <a name="SiteemHtml4">
+            <a href="#Linksparacadacoisa">
+              <h1>Site em Html4</h1>
+            </a>
+
+            <p> Aqui usamos tags obsoletas do próprio Html4. Clique no botão abaixo para ver. 
+              <br>
+              <br>
+              <a href="html4.html"><button>Html4</button></a>
+          </a>
+          </p>
+          <hr>
+          
+          <a name="Semântica">
+            <a href="#Linksparacadacoisa">
+              <h1>Semântica</h1>
+            </a>
+          <hr>
+
+          <a name="Formatacaodostextos">
+            <a href="#Linksparacadacoisa">
+              <h1>Formatação dos textos</h1>
+            </a>
+
+            <p>
+              Negrito(bold) use a tag B
+              <br>
+              Por exemplo: <b>Lá ele</b>
+              <br>
+              Negrito/destaque representa algo importante, sério e urgente com a tag STRONG
+              <br>
+              Por exemplo: <strong>Olha</strong> ele
+              <br>
+              Itálico use a tag "i" , mas só em termos técnicos.
+              <br>
+              Por exemplo: O nome da flor é
+              <i>Orquídea</i>.
+              <br>
+              Itálico com enfâse em uma palavra use a tag "em". Ajuda na acessibilidade, lendo com mais intensidade.
+              <br>
+              Por exemplo: Ela <em>não</em> passou por aqui ontem.
+              <br>
+              Sublinhado use a tag "u"
+              <br>
+              Por exemplo: <u>Norman</u>
+              <br>
+              Texto subscrito (letras pequenas abaixo de um texto) use a tag "sub"
+              <br>
+              Por exemplo: H<sub>2</sub>0.
+              <br>
+              Caso queira o texto em sobrescrito (letras pequenas acima de um texto) use a tag "sup".
+              <br>
+              Por exemplo: X <sup>4</sup>.
+              <br>
+              <br>
+              Ps: Não são tags nulas.
+          </a>
+          </p>
+          <hr>
+
+          <a name="Formasdeinserircores">
+            <a href="#Linksparacadacoisa">
+              <h1>Formas de inserir cores </h1>
+            </a>
+
+            <p>
+              As cores podem ser inseridas de duas formas:
+              <br>
+              Por seus nomes em inglês.
+              <br>
+              Por seus códigos hexadecimais.
+              <br>
+              Foreground é o primeiro plano da página(background=último plano).
+              <br>
+              A fonte(qualquer caractere de texto seja letra, número ou símbolo) é um elemento que faz parte do
+              foreground de uma
+              página.
+            </p>
+            <p>
+              Veja outras cores no site: <a href="https://www.w3schools.com/colors/colors_picker.asp"
+                target="_blank">W3C
+                Schools</a> <br>
+              Ver tabela de cores em HTML nele.
+          </a>
+          </p>
+          <hr>
+
+          <a name="Listas">
+            <a href="#Linksparacadacoisa">
+              <h1>Listas</h1>
+            </a>
+
+            <p>
+              Lista não ordenada use a tag "ul". (li é usado para definir a lista)
+              <br>
+              Por exemplo: Jogos <ul>
+                <li> Salão</li>
+                <li> Online </li>
+                <li> Terra </li>
+              </ul>
+            </p>
+            <p>
+              Lista ordenada use a tag "ol".
+              <br>
+              Por exemplo: Jogos <ol>
+                <li> Salão</li>
+                <li> Online </li>
+                <li> Terra </li>
+              </ol>
+            </p>
+            <p>
+              Lista de definição use a tag "d" e o número da lista. <br>
+              <!-- A lista de definição é constituída por um termo e uma descrição. A criação desse modelo de lista utiliza três elementos do HTML.-->
+
+              Por exemplo: <dl>
+                <dt> criar níveis</dt>
+                <dd> adiciona a definição-subníveis.</dd>
+              </dl>
+              <d2>
+                <dt> criar níveis</dt>
+                <dd> adiciona a definição-subníveis.</dd>
+              </d2>
+          </a>
+          </p>
+          <hr>
+
+          <a name="InsercaodeLinks">
+            <a href="#Linksparacadacoisa">
+              <h1>Inserção de Links</h1>
+            </a>
+
+            <p>
+              Inserir um link na página use a tag "a" com o atributo href="endereço de destino".
+              <br>
+              Caso queira que abrir em outra página coloque target="_blank" <br>
+              Por exemplo: <a href="https://github.com/willianenf" target="_blank">Meu Github</a>
+              <!--
       target="_blank" carrega o novo endereço de destino em uma nova janela ou uma nova aba.
       o atributo href="" é obrigatório. Tal atributo guarda o novo endereço para onde o usuário será direcionado.
     -->
-  </a>
-  </p>
-  <hr>
-  <p>
-    <a name="InsercaodeImagens">
-    <font color="red" size="5px" face="verdana">Inserção de Imagens</font>
-  </p>
-  <p>
-    Para inserir uma imagem na página digite &lt;img&gt; com o atributo src="Local onde está a imagem". <br>
-    Caso queira breve descrição para imagem digite alt="" <br>
-    Por exemplo: <img src="img/mapa01.png" alt="Tela de cógidos em um notebook" width="">
-    <!--
-    Antes podia definir a largura da imagem digitando
-    width="", mas não é mais de boa prática. CSS cuida disso
-     Os atributos dessa tag auxiliam na definição do tamanho, da posição e da descrição da imagem. 
+          </a>
+          </p>
+          <hr>
+
+          <a name="Tabelas">
+            <a href="#Linksparacadacoisa">
+              <h1>Tabelas</h1>
+            </a>
+
+            <p>
+              <!--
+      HIERARQUIA DE TABELAS (SIMPLES)
+      TABLE = tabela
+       TABLE ROW = linha de tabela
+        TABLE HEADER = cabeçalho de tabela
+         TABLE DATA = dado de tabela
     -->
-  </a>
-  </p>
-  <hr>
-  <p>
-    <a name="Tabelas">
-    <font color="red" size="5px" face="verdana">Tabelas</font>
-  </p>
-  <p>
-    <table border="1">
+              <table>
+                <p> Antigamente era usado para fazer as linhas e colunas da tabela com o atributo " border="" ". <br>
+                  Mas hoje em dia o certo é usar CSS. Por exemplo: (olha o que comentei no CSS)</p>
+                <tr>
+                  <!-- Primeira linha -->
+                  <th>Título 1</th>
+                  <!---->
+                  <th>Título 2</th>
+                  <th>Título 3</th>
+                </tr>
 
-      <tr>
-        <th>Título 1</th>
-        <th>Título 2</th>
-      </tr>
+                <tr>
+                  <td> A1 </td>
+                  <!---->
+                  <td> B1 </td>
+                  <td> C1 </td>
+                </tr>
 
-      <tr>
-        <td> Kpop </td>
-        <td> Pop </td>
-      </tr>
+                <tr>
+                  <td> A2 </td>
+                  <td> B2 </td>
+                  <td> B2 </td>
+                </tr>
 
-      <tr>
-        <td> HipHop </td>
-        <td> Rap </td>
-      </tr>
+              </table>
+          </a>
+          </p>
+          <hr>
 
-    </table>
-  </a>
-  </p>
-  <hr>
-  <p>
-    <a name="FazerFormulario">
-    <font color="red" size="5px" face="verdana">Fazer Formulário</font>
-  </p>
-<p>Para fazer um formulário digite &lt;form&gt; <br>
-A melhor prática sempre definir pelo menos o atributo action e o atributo method. <br>
-O atributo action define o local (uma URL) em que os dados recolhidos do formulário devem ser enviados. <br>
-O atributo method define qual o método HTTP para enviar os dados (ele pode ser "GET" ou "POST"). <br>
-GET: Quando clicamos em um link da tag &lt;a&gt;, o link utiliza o método GET. O método GET possui capacidade para 1.024 caracteres e é utilizado para passar pequenas informações ao servidor. Ele vem pôr padrão.
-<br>
-POST: O método POST não retorna ao cliente. Desse modo, é considerado um método mais seguro. Além disso, o método POST não possui limite de capacidade, o que permite passar informações mais longas
-<br>
-O atributo type da tag &lt;input&gt; é o mais importante. Tal atributo define como o elemento deve comportar-se.
-<br>
-Também inserimos uma tag &lt;textarea&gt; para verificar a diferença dela com a tag &lt;input&gt; do tipo text.
-  <br>
-  Por fim, inserimos uma tag &lt;label&gt;para cada elemento, a fim de facilitar a identificação de cada um.
-</p>
+          <a name="FazerFormulario">
+            <a href="#Linksparacadacoisa">
+              <h1>Fazer Formulário</h1>
+            </a>
 
-  Por exemplo: <br>
-   <form action=”cadatro.php” method=”post” autocomplete="off">
-    <label for="inome"> text: </label>
-    <input type=”text” name="nome" id="inome">
-    <label for="isenha"> password: </label>
-    <input type=”password” name="senha" id="isenha">
-    <label> Textarea: </label>
-    <textarea> </textarea>
- <input type="submit" value="Cadastro">
-</a>
-   <!-- <button type="submit">Cadastrar</button>-->
-   
-<!--Se quiser pode colocar autocomplete="off" dentro da tag form para tirar aquela mensagem "chata"
+
+            <p>
+              Formulário use a tag "form"
+              <br>
+              A melhor prática dentro sempre definir pelo menos o atributo action e o atributo method. <br>
+              O atributo action define o local (uma URL) em que os dados recolhidos do formulário devem ser enviados.
+              <br>
+              O atributo method define qual o método HTTP para enviar os dados (ele pode ser "GET" ou "POST"). <br>
+              GET: Quando clicamos em um link da tag &lt;a&gt;, o link utiliza o método GET. O método GET possui
+              capacidade para
+              1.024 caracteres e é utilizado para passar pequenas informações ao servidor. Ele vem pôr padrão.
+              <br>
+              POST: O método POST não retorna ao cliente. Desse modo, é considerado um método mais seguro. Além disso, o
+              método
+              POST não possui limite de capacidade, o que permite passar informações mais longas
+              <br>
+              O atributo type da tag &lt;input&gt; é o mais importante. Tal atributo define como o elemento deve
+              comportar-se.
+              <br>
+              Também inserimos uma tag &lt;textarea&gt; para verificar a diferença dela com a tag &lt;input&gt; do tipo
+              text.
+              <br>
+              Por fim, inserimos uma tag &lt;label&gt;para cada elemento, a fim de facilitar a identificação de cada um.
+            </p>
+
+            Por exemplo: <br>
+            <form action=”cadatro.php” method=”” autocomplete="off">
+              <label for="inome"> text: </label>
+              <input type=”text” name="nome" id="inome">
+              <label for="isenha"> password: </label>
+              <input type=”password” name="senha" id="isenha">
+              <label> Textarea: </label>
+              <textarea> </textarea>
+              <input type="submit" value="Cadastro">
+          </a>
+          <!-- <button type="submit">Cadastrar</button>-->
+
+          <!--Se quiser pode colocar autocomplete="off" dentro da tag form para tirar aquela mensagem "chata"
 
 Label é etiqueta- relaciona a palavra com o objeto(ajuda no celular)
 
 Name="" para php e html
 id="" é para js, inclusive para o label
-
-crtl+shift+p em cima de nome, envelopar, label
 
 Mesmo que não link para uma página, olha a URL.
 
@@ -289,36 +409,70 @@ Usamos o post para dados sensíveis
 No futuro tenho que aprender mais de https para proteger dados
 
 Não é mais critério a velocidade entre Get e Post-->
-  </form>
-  <hr>
-<p>
-  <a name="UsodosTypes">
-  <font color="red" size="5px" face="verdana">Uso dos types no Button</font>
-</p>
-<p>
-Para criar um botão usamos a tag &lt;button&gt; e ele tem três valores para Type, sendo: <br>
-Submit: O type submit envia os dados do formulário à página-destino do atributo actions. <br>
-Por exemplo: <button type="submit">Cadastro</button> 
-<br>
-Reset: O type reset redefine todos os campos para padrão, assim que acionado. <br>
-Por exemplo: <button type="submit">Envio</button> 
-<br>
-Button: Uma tag button com o type button não realiza nenhuma ação, a não ser que seja acionada via codificação Javascript. Esse não tenho exemplo pôrque ainda não mexi bem no Javascript.<br>
-</a>
-</p>
-<hr>
-<p>
-  <font color="red" size="5px" face="verdana">Checkbox</font>
-</p>
-<p>
-  Checkbox é uma tag codificada para uma seleção múltipla e independente de opções(caso uma selecionada, não cancela a outra opção.) <br>
-  Name e value são responsáveis por informar actions aos dados que devem ser enviados ao servidor.  <br>
-  Para adicionar checkbox basta colocar &lt;input type="checkbox" name="nome" value="SelectA"&gt; <br>
-  &lt;input type="checkbox" name="nome" value="SelectB"&gt; <br>
-  Caso coloque checked, o elemento já aparecer selecionado. <br>
-  Por exemplo: <input type="checkbox" name="nome" value="SelectA"> Botão A </input> 
-  <input type="checkbox" name="nome" value="SelectB"&gt;>Botão B </input> <br>
-</p>
+          </form>
+          <hr>
+
+          <a name="UsodosTypes">
+            <a href="#Linksparacadacoisa">
+              <h1>Uso dos types no Button</h1>
+            </a>
+
+            <p>
+              Para um botão usamos a tag "button" e ele tem três valores para Type, sendo:
+              <br>
+              Submit: O type submit envia os dados do formulário à página-destino do atributo actions.
+              <br>
+              Por exemplo: <button type="submit">Cadastro</button>
+              <br>
+              Reset: O type reset redefine todos os campos para padrão, assim que acionado.
+              <br>
+              Por exemplo: <button type="submit">Envio</button>
+              <br>
+              Button: Uma tag button com o type button não realiza nenhuma ação, a não ser que seja acionada via
+              codificação
+              Javascript.
+              <br>
+              Esse não tenho exemplo pôrque ainda não mexi bem no Javascript.
+
+          </a>
+          </p>
+          <hr>
+
+          <a name="Checkbox">
+            <a href="#Linksparacadacoisa">
+              <h1>Checkbox</h1>
+            </a>
+
+            <p>
+              Checkbox é uma tag codificada para uma seleção múltipla e independente de opções(caso uma selecionada, não
+              cancela a
+              outra opção.)
+              <br>
+              Name e value são responsáveis por informar actions aos dados que devem ser enviados ao servidor.
+              <br>
+              Para adicionar checkbox basta colocar &lt;input type="checkbox" name="nome" value="SelectA"&gt;
+              <br>
+              &lt;input type="checkbox" name="nome" value="SelectB"&gt;
+              <br>
+              Caso coloque checked, o elemento já aparecer selecionado.
+              <br>
+              Por exemplo: <input type="checkbox" name="nome" value="SelectA"> Botão A </input>
+              <input type="checkbox" name="nome" value="SelectB" &gt;>Botão B </input>
+          </a>
+          </p>
+          <hr>
+
+          <a name="Atalhos">
+            <a href="#Linksparacadacoisa">
+              <h1>Atalhos vs code</h1>
+            </a>
+
+            <p>
+              CRTL+SHIFT+P ou F1 com o texto requerido selecionado, digite abb deve aparecer Wrap Abbreviation,
+              selecione e digite a tag que você quer.
+              <br>
+              CTRL+F= achar palavra no código.
+            </p>
 </body>
 
 </html>
