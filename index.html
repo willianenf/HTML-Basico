@@ -21,6 +21,13 @@
   <link rel="shortcut icon" href="img/Html5.ico" type="image/x-icon">
   <title>Prática Ensinamentos</title>
 
+  <!--Css da tag Mark-->
+  <style>
+    mark{
+        background-color: limegreen;
+    }
+</style>
+
 </head>
 
 <!--Não é mais recomendado usar bgcolor aqui, e sim no CSS-->
@@ -45,15 +52,11 @@
     <a href="#InsercaodeImagens">Inserção de Imagens</a> <br>
     <a href="#Formatacaodecabecalho">Formatação de cabeçalho</a><br>
     <a href="#Formatacaodostextos">Formatação dos textos</a> <br>
-    <a href="#Formasdeinserircores">Formas de inserir cores</a> <br>
     <a href="#Listas">Listas</a> <br>
     <a href="#InsercaodeLinks">Inserção de Links</a> <br>
 
-    <a href="#Tabelas">Tabelas</a> <br>
-    <a href="#FazerFormulario">Fazer Formulário</a> <br>
-    <a href="#UsodosTypes">Uso dos Types</a> <br>
-    <a href="#Checkbox">Checkbox</a> <br>
-    <a href="#Atalhos">Atalhos</a>
+
+    <a href="#AtalhoseExtensões">Atalhos e Extensões</a>
   </ul>
   <hr>
   <a name="Separadores">
@@ -213,64 +216,28 @@
               </a>
 
               <p>
-                Negrito(bold) use a tag B
-                <br>
-                Por exemplo: <b>Lá ele</b>
-                <br>
-                Negrito/destaque representa algo importante, sério e urgente com a tag STRONG
-                <br>
-                Por exemplo: <strong>Olha</strong> ele
-                <br>
-                Itálico use a tag "i" , mas só em termos técnicos.
-                <br>
-                Por exemplo: O nome da flor é
-                <i>Orquídea</i>.
-                <br>
-                Itálico com enfâse em uma palavra use a tag "em". Ajuda na acessibilidade, lendo com mais intensidade.
-                <br>
-                Por exemplo: Ela <em>não</em> passou por aqui ontem.
-                <br>
-                Sublinhado use a tag "u"
-                <br>
-                Por exemplo: <u>Norman</u>
-                <br>
-                Texto subscrito (letras pequenas abaixo de um texto) use a tag "sub"
-                <br>
-                Por exemplo: H<sub>2</sub>0.
-                <br>
-                Caso queira o texto em sobrescrito (letras pequenas acima de um texto) use a tag "sup".
-                <br>
-                Por exemplo: X <sup>4</sup>.
-                <br>
-                <br>
-                Ps: Não são tags nulas.
-            </a>
-            </p>
-            <hr>
-
-            <a name="Formasdeinserircores">
-              <a href="#Linksparacadacoisa">
-                <h1>Formas de inserir cores </h1>
-              </a>
-
-              <p>
-                As cores podem ser inseridas de duas formas:
-                <br>
-                Por seus nomes em inglês.
-                <br>
-                Por seus códigos hexadecimais.
-                <br>
-                Foreground é o primeiro plano da página(background=último plano).
-                <br>
-                A fonte(qualquer caractere de texto seja letra, número ou símbolo) é um elemento que faz parte do
-                foreground de uma
-                página.
-              </p>
-              <p>
-                Veja outras cores no site: <a href="https://www.w3schools.com/colors/colors_picker.asp"
-                  target="_blank">W3C
-                  Schools</a> <br>
-                Ver tabela de cores em HTML nele.
+                <h1>Principais formatações</h1>
+                <h2>Negrito / Destaque</h2>
+                <p> Nesta frase temos <b>um termo em negrito</b> usando a tag B (não semântica). </p>
+                <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica). </p>
+                <h2>Itálico / Ênfase</h2>
+                <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica)</p>
+                <p>Nesta frase, temos <em>um termo em ênfase</em> usando a tag EM (semântica).</p>
+                <!--Guanabara recomenda não usar mais tags como B e I, porque elas podem ficar obsoletas.-->
+                <h2>Texto marcado</h2>
+                <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK.</p>
+                <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+                <h2>Texto grande e pequeno</h2>
+                <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+                <h2>Texto deletado</h2>
+                <p>Podemos marcar<del> um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+                <h2>Texto inserido</h2>
+                <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. </p>
+                <p>Existe também o <u>sublinhado</u> com a tag U (não semântica)</p>
+                <h2>Texto sobrescrito</h2>
+                <p>Para inserir coisas tipo x<sup>2</sup>0</p>
+                <h2>Texto subscrito</h2>
+                <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
             </a>
             </p>
             <hr>
@@ -330,181 +297,33 @@
     -->
             </a>
             </p>
+          
             <hr>
 
-            <a name="Tabelas">
+            
+            <a name="AtalhoseExtensões">
               <a href="#Linksparacadacoisa">
-                <h1>Tabelas</h1>
+                <h1>Extensões e Atalhos VSCode</h1>
               </a>
-
+              <h2>Extensões</h2>
               <p>
-                <!--
-      HIERARQUIA DE TABELAS (SIMPLES)
-      TABLE = tabela
-       TABLE ROW = linha de tabela
-        TABLE HEADER = cabeçalho de tabela
-         TABLE DATA = dado de tabela
-    -->
-                <table>
-                  <p> Antigamente era usado para fazer as linhas e colunas da tabela com o atributo " border="" ". <br>
-                    Mas hoje em dia o certo é usar CSS. Por exemplo: (olha o que comentei no CSS)</p>
-                  <tr>
-                    <!-- Primeira linha -->
-                    <th>Título 1</th>
-                    <!---->
-                    <th>Título 2</th>
-                    <th>Título 3</th>
-                  </tr>
-
-                  <tr>
-                    <td> A1 </td>
-                    <!---->
-                    <td> B1 </td>
-                    <td> C1 </td>
-                  </tr>
-
-                  <tr>
-                    <td> A2 </td>
-                    <td> B2 </td>
-                    <td> B2 </td>
-                  </tr>
-
-                </table>
-            </a>
-            </p>
-            <hr>
-
-            <a name="FazerFormulario">
-              <a href="#Linksparacadacoisa">
-                <h1>Fazer Formulário</h1>
-              </a>
-
-
-              <p>
-                Formulário use a tag "form"
-                <br>
-                A melhor prática dentro sempre definir pelo menos o atributo action e o atributo method. <br>
-                O atributo action define o local (uma URL) em que os dados recolhidos do formulário devem ser enviados.
-                <br>
-                O atributo method define qual o método HTTP para enviar os dados (ele pode ser "GET" ou "POST"). <br>
-                GET: Quando clicamos em um link da tag &lt;a&gt;, o link utiliza o método GET. O método GET possui
-                capacidade para
-                1.024 caracteres e é utilizado para passar pequenas informações ao servidor. Ele vem pôr padrão.
-                <br>
-                POST: O método POST não retorna ao cliente. Desse modo, é considerado um método mais seguro. Além disso,
-                o
-                método
-                POST não possui limite de capacidade, o que permite passar informações mais longas
-                <br>
-                O atributo type da tag &lt;input&gt; é o mais importante. Tal atributo define como o elemento deve
-                comportar-se.
-                <br>
-                Também inserimos uma tag &lt;textarea&gt; para verificar a diferença dela com a tag &lt;input&gt; do
-                tipo
-                text.
-                <br>
-                Por fim, inserimos uma tag &lt;label&gt;para cada elemento, a fim de facilitar a identificação de cada
-                um.
+                advanced-new-file permite criar um novo arquivo utilizando somente o teclado. Basta clicar "Ctrl+Alt+N"
               </p>
-
-              Por exemplo: <br>
-              <form action=”cadatro.php” method=”” autocomplete="off">
-                <label for="inome"> text: </label>
-                <input type=”text” name="nome" id="inome">
-                <label for="isenha"> password: </label>
-                <input type=”password” name="senha" id="isenha">
-                <label> Textarea: </label>
-                <textarea> </textarea>
-                <input type="submit" value="Cadastro">
-            </a>
-            <!-- <button type="submit">Cadastrar</button>-->
-
-            <!--Se quiser pode colocar autocomplete="off" dentro da tag form para tirar aquela mensagem "chata"
-
-Label é etiqueta- relaciona a palavra com o objeto(ajuda no celular)
-
-Name="" para php e html
-id="" é para js, inclusive para o label
-
-Mesmo que não link para uma página, olha a URL.
-
-q= é caixa da solitação
-
-Colocado POST inspeciona, vai em network, headers, sobe e clica no cadastro php, depois desce que tu acha as informações.Para proteger, aí entraria o https
-
-Usar get, quando os dados não forem sensíveis(senha, número de cartão de crédito, endereço..)
-
-get tem limite de 3000 bytes(3000 letras), e não aceita envio de arquivos(fotos)
-
-Usamos o post para dados sensíveis
-
-No futuro tenho que aprender mais de https para proteger dados
-
-Não é mais critério a velocidade entre Get e Post-->
-            </form>
-            <hr>
-
-            <a name="UsodosTypes">
-              <a href="#Linksparacadacoisa">
-                <h1>Uso dos types no Button</h1>
-              </a>
-
               <p>
-                Para um botão usamos a tag "button" e ele tem três valores para Type, sendo:
-                <br>
-                Submit: O type submit envia os dados do formulário à página-destino do atributo actions.
-                <br>
-                Por exemplo: <button type="submit">Cadastro</button>
-                <br>
-                Reset: O type reset redefine todos os campos para padrão, assim que acionado.
-                <br>
-                Por exemplo: <button type="submit">Envio</button>
-                <br>
-                Button: Uma tag button com o type button não realiza nenhuma ação, a não ser que seja acionada via
-                codificação
-                Javascript.
-                <br>
-                Esse não tenho exemplo pôrque ainda não mexi bem no Javascript.
-
-            </a>
-            </p>
-            <hr>
-
-            <a name="Checkbox">
-              <a href="#Linksparacadacoisa">
-                <h1>Checkbox</h1>
-              </a>
-
+                file utils permite renomear, deletar, copias e afins um arquivo usando o teclado.
+              </p>
+            
+              <h2>Atalhos</h2>
               <p>
-                Checkbox é uma tag codificada para uma seleção múltipla e independente de opções(caso uma selecionada,
-                não
-                cancela a
-                outra opção.)
+                Ctrl + P busca pelos arquivos do projeto. 
                 <br>
-                Name e value são responsáveis por informar actions aos dados que devem ser enviados ao servidor.
+                Ctrl+Shift+P (ou F1) : Com o texto requerido selecionado, digite abb deve aparecer Wrap Abbreviation, selecione e digite a tag que você quer.
                 <br>
-                Para adicionar checkbox basta colocar &lt;input type="checkbox" name="nome" value="SelectA"&gt;
+                Ctrl+F: Ajuda a achar palavra no código.
+                <br> 
+                Ctrl + D : Seleciona a próxima ocorrência do que está selecionado.
                 <br>
-                &lt;input type="checkbox" name="nome" value="SelectB"&gt;
-                <br>
-                Caso coloque checked, o elemento já aparecer selecionado.
-                <br>
-                Por exemplo: <input type="checkbox" name="nome" value="SelectA"> Botão A </input>
-                <input type="checkbox" name="nome" value="SelectB" &gt;>Botão B </input>
-            </a>
-            </p>
-            <hr>
-
-            <a name="Atalhos">
-              <a href="#Linksparacadacoisa">
-                <h1>Atalhos vs code</h1>
-              </a>
-
-              <p>
-                CRTL+SHIFT+P ou F1 com o texto requerido selecionado, digite abb deve aparecer Wrap Abbreviation,
-                selecione e digite a tag que você quer.
-                <br>
-                CTRL+F= achar palavra no código.
+                Ctrl + ''(Botão das aspas): Abre o terminal (se estiver fechado)| Foca ele caso não esteja | Fceha o terminal se estiver focado. 
               </p>
 </body>
 
