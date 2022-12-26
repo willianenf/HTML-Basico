@@ -52,6 +52,7 @@
     <a href="#InsercaodeImagens">Inserção de Imagens</a> <br>
     <a href="#Formatacaodecabecalho">Formatação de cabeçalho</a><br>
     <a href="#Formatacaodostextos">Formatação dos textos</a> <br>
+    <a href="#OutrasFormatacoes">Outras formatações</a>
     <a href="#Listas">Listas</a> <br>
     <a href="#InsercaodeLinks">Inserção de Links</a> <br>
 
@@ -215,7 +216,6 @@
                 <h1>Formatação dos textos</h1>
               </a>
 
-              <p>
                 <h1>Principais formatações</h1>
                 <h2>Negrito / Destaque</h2>
                 <p> Nesta frase temos <b>um termo em negrito</b> usando a tag B (não semântica). </p>
@@ -239,7 +239,45 @@
                 <h2>Texto subscrito</h2>
                 <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
             </a>
-            </p>
+            <hr>
+            <a name="OutrasFormatacoes">
+              <a href="#Linksparacadacoisa">
+                <h1>Outras Formatações</h1>
+              </a>
+              
+              <h2>Código-fonte / Pré-Formatação</h2>
+              <!--A fonte não era monoespaçada, que é uma fonte ótima para ler código.-->
+              <p>O comando <code>document.getElementById('teste') </code>é escrito em linguagem JavaScript.</p>
+              <!--O pre identa seu código colocado-->
+              <pre>
+                  <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0
+              print (f'O número {num} é PAR')
+            else
+              print (f'O número {num} é ÍMPAR')
+              print('Fim do programa')
+                  </code>
+              </pre>
+              <!-- Tab: identa código. 
+                  Shift+Tab: corrigi espaçamento resolvendo identação rapidamente.-->
+                  <h2>Citações simples</h2>
+                  <p>
+                      Como diria o pai de um amigo: <q>o computador é um burro rápido.</q>
+                  </p>
+                  <h2>Citações completas</h2>
+                  <p>
+                      Segundo John Green, no seu livro "Quem é você Alaska?":
+                      
+                      <blockquote cite="https://g.co/kgs/GUJShD">Imaginar o amanhã é o que nos impulsiona, mas nunca fazemos nada. Simplesmente usamos o futuro para escapar do presente.</blockquote>
+
+                  </p>
+                  <h2>Abreviações</h2>
+                  <p>Estou estudando<abbr title="HyperText Markup Language"> HTML</abbr> e<abbr title="Cascading Style Sheets"> CSS</abbr></p>
+                  <!--Mostra esse pequeno Popup-->
+                  <!--Depois pode tirar esse sublinhado com CSS.-->
+                  <h2>Texto invertido</h2>
+                  <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
             <hr>
 
             <a name="Listas">
@@ -324,6 +362,11 @@
                 Ctrl + D : Seleciona a próxima ocorrência do que está selecionado.
                 <br>
                 Ctrl + ''(Botão das aspas): Abre o terminal (se estiver fechado)| Foca ele caso não esteja | Fceha o terminal se estiver focado. 
+                <br>
+                Shift+Tab: corrigi espaçamento resolvendo identação rapidamente.
+                <br>
+                Tab: identa texto selecionado. 
+
               </p>
 </body>
 

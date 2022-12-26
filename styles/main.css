@@ -4,12 +4,7 @@ a {
 html{
     scroll-behavior: smooth;
 }
-/*Aqui estamos determinando o tamanho da janela e da borda da tabela */
-table{
-    width: 300px;
-    border-collapse: collapse;
-}
-td{
-    border: 1px solid black;
-    padding: 8px;
+/* Aqui adicionei a mãozinha nos button do site*/
+button{
+    cursor: pointer;
 }
