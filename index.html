@@ -393,11 +393,18 @@
                 <h1>Inserção de Links</h1>
               </a>
 
-              <p>
-                Inserir um link na página use a tag "a" com o atributo href="endereço de destino".
-                <br>
-                Caso queira que abrir em outra página coloque target="_blank" <br>
-                Por exemplo: <a href="https://github.com/willianenf" target="_blank">Meu Github</a>
+              <h1>Usando links externos</h1>
+              <p>Você pode acessar o meu <a href="https://github.com/willianenf" target="_blank" rel="external">repositóio público no GitHub</a></p>
+              <p>Você também pode acessar o meu <a href="https://www.youtube.com/channel/UCs4XbZJVdT-NHM9YxKruUDg" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+              <h1>Usando links internos</h1>
+              <p>Esta é a minha primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+              <p>Você também pode acessar nossa <a href="noticias/pag003.html" target="_self">página de notícias</a></p>
+
+              <h1>Links para download</h1>
+              <ul>
+              <li><a href="livro/curriculo.pdf" download="curriculo.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+              <li><a href="livro/curriculo.zip.zip" download="curriculo.zip" type="application/zip">Livro compactado em ZIP</a></li>
+              </ul>
                 <!--
       target="_blank" carrega o novo endereço de destino em uma nova janela ou uma nova aba.
       o atributo href="" é obrigatório. Tal atributo guarda o novo endereço para onde o usuário será direcionado.
