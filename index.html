@@ -133,9 +133,9 @@
     width="", mas não é mais de boa prática. CSS cuida disso.
     ?? Os atributos dessa tag auxiliam na definição do tamanho, da posição e da descrição da imagem. 
     -->
-        Exemplos sobre imagens, clique no botão embaixo.
+        Exemplos sobre imagens, clique no link abaixo.
         <p>
-          <a href="imagens.html"><button>Imagens</button></a> </p>
+          <a href="imagens.html">Imagens</a> </p>
         <h2>Direitos de Imagem</h2>
         <p>Não podemos utilizar qualquer imagem que achamos na internet, existem direitos em algumas delas. <br>
           Podemos filtrar as opções, através das ferramentas no google quando selecionado a opção de imagens. <br>
@@ -204,11 +204,11 @@
             <p>Iniciando a falar sobre mudanças que ocorreram do HTML4 para o HTML5, e suas tags obsoletas.</p>
 
             <h2>HTML4</h2>
-            <p> Aqui usamos algumas das tags obsoletas do próprio HTML4. Clique no botão abaixo para ver. </p>
+            <p> Aqui usamos algumas das tags obsoletas do próprio HTML4. Clique nos links abaixo para ver. </p>
             <p>
-              <a href="html4.html"><button>Html4</button></a>
+              <a href="html4.html">Html4</a>
             </p>
-            <p><button><a href="html5.html">Html5</a></button></p>
+            <p><a href="html5.html">Html5</a></p>
             <hr>
 
             <a name="Formatacaodostextos">
@@ -264,12 +264,17 @@
                   <h2>Citações simples</h2>
                   <p>
                       Como diria o pai de um amigo: <q>o computador é um burro rápido.</q>
+                      <!-- Q : quote - citar 
+                      Essa é usado para uma citação no meio de um parágrafo-->
                   </p>
                   <h2>Citações completas</h2>
                   <p>
                       Segundo John Green, no seu livro "Quem é você Alaska?":
                       
                       <blockquote cite="https://g.co/kgs/GUJShD">Imaginar o amanhã é o que nos impulsiona, mas nunca fazemos nada. Simplesmente usamos o futuro para escapar do presente.</blockquote>
+
+                    <!--Blockquote: Citação em bloco, citações longas e precisam de um parágrafo só para si 
+                    Parâmetro cite="" para colocar o link de onde está a citação-->
 
                   </p>
                   <h2>Abreviações</h2>
@@ -286,6 +291,9 @@
               </a>
              
               <h2>Listas Ordenadas</h2>
+
+              <!--Ordered lists : Listas onde a ordem dos itens é importante.-->
+
                 <ol type="1" start=""> <!--
                 Quatro tipos de Type: 
 
@@ -295,9 +303,11 @@
                 I: romano maiúsculo
                 i: romano minúsculo
 
-               E o parâmetro Start para selecionar onde a ordem começa-->
+               E o parâmetro Start para selecionar onde a ordem começa.
 
-              <!--List Icon-->
+               O certo não é colocar o start, mas deixei por curiosidade-->
+
+              <!--Li : List item -->
               <li>Acordar
               <li>Tomar café
               <li>Escovar os dentes
@@ -306,6 +316,9 @@
               <!--Fechamento de "li" é opcional no html5-->
               </ol>
               <h2>Listas não ordenadas</h2>
+
+              <!--Unordered lists : Listas não ordenadas, conhecidas também como LISTAS COM MARCADORES, onde a ordem não influencia no significado da lista.-->
+
                <ul type="disc">
                 <li>Pão
                 <li>Leite
@@ -319,10 +332,11 @@
               disc: é padrão
               circle: circulo em branco
               square: quadrado
-            -->
-              <!--</ já fecha automaticamente-->
 
-                <!--SÓ EXEMPLO QUE FIZ!!-->
+            -->
+
+              <!-- </ já fecha automaticamente-->
+
               <h2>Minhas linguagens favoritas</h2>
               <ol>
                   <li>Antigas</li>
@@ -342,6 +356,7 @@
               </ol>
               <h2>Meus jogos favoritos</h2>
               <ol>
+                  <!--Sub lista : Filha-->
                   <li>PS5</li>
                   <ul>
                       <li>God of Ragnarok</li>
@@ -351,7 +366,6 @@
                   
                   <li>PS4</li>
                   <ul>
-              
                       <li>The Last of Us</li>
                       <ul style="list-style-type: circle; ">
                           <li>The Last of Us 2</li>
@@ -367,9 +381,7 @@
                   </ul>
               </ol>
           <!--Não é alinhamento, e sim aninhamento-->
-          <!--O certo não é colocar o start, mas deixei por curiosidade-->
-          
-
+        
           <h2>Lista de Definições</h2>
             <dl>
               <dt>HTML</dt>
@@ -380,7 +392,7 @@
               <dd>Linguagem de Programação para a criação de interavidade de um site.</dd>
             </dl>
             <!--Dl : Lista de Definição
-              Dt : Definição de termo
+              DT : Definição de termo
               DD: Definição de descrição
 
               Google dá valor para sites com lista de definição
@@ -393,22 +405,55 @@
                 <h1>Inserção de Links</h1>
               </a>
 
+              <!--A : Anchor - Âncora para criar hyperlinks 
+
+              Href : Hypertext reference - Referência hipertexto, onde colocamos a URL (é obrigatório o uso desse atributo. Tal atributo guarda o novo endereço para onde o usuário será direcionado.)
+              
+              URL : Uniform Resource Locators 
+
+              HrefLang: Hypertext reference language - Linguagem referência hipertexo, permitindo indicar qual o idioma principal do site onde está o link. -->
+
               <h1>Usando links externos</h1>
+
               <p>Você pode acessar o meu <a href="https://github.com/willianenf" target="_blank" rel="external">repositóio público no GitHub</a></p>
               <p>Você também pode acessar o meu <a href="https://www.youtube.com/channel/UCs4XbZJVdT-NHM9YxKruUDg" target="_blank" rel="external">canal gratuito no YouTube</a></p>
               <h1>Usando links internos</h1>
               <p>Esta é a minha primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
               <p>Você também pode acessar nossa <a href="noticias/pag003.html" target="_self">página de notícias</a></p>
+              <p>Este é o link para <a href="mailto:williane010201@gmail.com">meu email</a></p>
 
+              <!--
+                O atributo target suporta os seguintes valores:
+
+                _Blank : carrega o novo endereço de destino em uma nova janela ou uma nova aba.
+                _Self : abre o link na janela ou frame atual, continua navegando no site (padrão).
+                _Top : vai desfazer todos os frames e abrir o destino no navegador completo.
+                _Parent : similar ao uso do _top em uma referência à janela mãe nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir.
+
+                _Top e _Parent são técnicas em quase desuso.
+
+                Rel (Relativo a) : Os atributos são
+
+                Next(Próximo) : indica que o link é para a próxima parte do documento atual.
+                Prev (Previous) : indica que o link é para a parte anterior do documento atual.
+                Author : indica que é um para o site do autor do artigo atual.
+                External : indica que é um link para outro site que não faz parte do site atual.
+                No follow : indica que é um link para um site não endossado, como um link pago.
+
+                Link Local ou Link interno : ele leva o visitante a outra página dentro do nosso próprio site.
+                Link Externo : leva para fora do site, com o uso da URL completa, incluindo protocolo http:// ou https:// 
+    -->
+
+              <h2>Links dentro do próprio site</h2>
+
+              <p>Para linkar a própria parte do site dentro dele mesmo, como faço neste site basta usar o atributo name ="nomedaseção" na parte que você quer linkar e href="#nomedaseção" para trazer você onde quer. </p>
+             
               <h1>Links para download</h1>
               <ul>
               <li><a href="livro/curriculo.pdf" download="curriculo.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
               <li><a href="livro/curriculo.zip.zip" download="curriculo.zip" type="application/zip">Livro compactado em ZIP</a></li>
               </ul>
-                <!--
-      target="_blank" carrega o novo endereço de destino em uma nova janela ou uma nova aba.
-      o atributo href="" é obrigatório. Tal atributo guarda o novo endereço para onde o usuário será direcionado.
-    -->
+                
             </a>
             </p>
           
@@ -447,6 +492,8 @@
                 Se quiser ir mais além digite como exemplo: ul>li*5 ou ol>li*5.
                 <br>
                 Mudar tags de uma vez: Clica no que quer mudar pressionando Alt, solta e apaga, depois clica Alt de novo, que sai.
+                <br>
+                Se selecionado dentro de um atributo e você quiser ir para dentro de outro use o TAB.
               </p>
               
 </body>
