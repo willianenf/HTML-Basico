@@ -52,10 +52,10 @@
     <a href="#InsercaodeImagens">Inserção de Imagens</a> <br>
     <a href="#Formatacaodecabecalho">Formatação de cabeçalho</a><br>
     <a href="#Formatacaodostextos">Formatação dos textos</a> <br>
-    <a href="#OutrasFormatacoes">Outras formatações</a>
+    <a href="#OutrasFormatacoes">Outras formatações</a> <br>
     <a href="#Listas">Listas</a> <br>
     <a href="#InsercaodeLinks">Inserção de Links</a> <br>
-
+    <a href="#Midiasemhtml5">Mídias em HTML5</a> <br>
 
     <a href="#AtalhoseExtensões">Atalhos e Extensões</a>
   </ul>
@@ -439,7 +439,47 @@
                 <!-- Você pode usar essa técnica aqui também ul>li*4>a-->
             </a>
             </p>
-          
+
+              <hr>
+
+              <a name="Midiasemhtml5">
+                <a href="#Linksparacadacoisa">
+                  <h1>Mídias em HTML5</h1>
+                </a>
+                <h1>Imagem dinâmica</h1>
+               <p>Esse assunto é um pouco grande, então criei uma página só para isso. 
+              Acesse a página no link abaixo.
+               </p>
+               <p><a href="imgd.html">Imagem Dinâmica</a></p>
+               <h1>Reproduzindo Áudio</h1>
+              <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+              <audio src="midia/smokeyslounge-tracktribe.mp3" controls autopla loop></audio>
+
+              <!--O AUTOPLAY QUEBRADO É PROPOSITAL!-->
+
+              <!--Esse meio tá um pouco ultrapassado, então, use com source, como foi feito abaixo-->
+
+              <!--Autoplay : Para fazer o áudio iniciar automaticamente. O autoplay não tem compatibilidade, e até o mp3, em alguns navegadores como o Google Chrome. Mas no caso do áudio precisamos de outros formatos de arquivo.
+             MP3 WAV (evita eles, por serem grandes) OGG 
+             Controls : Aperecer o pause.-->
+
+            <audio preload="metadata" controls autopla loop>
+            <source src="#" type="audio/mpeg">
+            <source src="#" type="audio/ogg">
+            <source src="#" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="#" download="" type="audio/mp3">Clique aqui para baixar o arquivo MP3</a></p>
+            </audio>
+
+            <!--A ordem do áudio é importante aqui também-->
+            <!--Se quiser ver mais types, entre no link nas partes de de links 
+            Preload : 
+            auto : é o padrão, mas perigoso por carregar primeiro 
+            metadata : carrega poucas coisas, como data, duração...
+            none : não carrega nada até o usuário apertar play 
+
+            loop é para a música ficar repetindo, tocando no fundo-->
+
+            <!--Imagens top, qualidade top apenas para arquivos download, não de navegação. -->
             <hr>
 
             <a name="AtalhoseExtensões">
